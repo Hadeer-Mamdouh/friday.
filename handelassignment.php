@@ -2,14 +2,13 @@
 session_start();
 if(isset($_SESSION['email'])){
 
-
-
-	$product =$_POST["product"];
-	$count   =$_POST["count"];
-	$price   =0;
+	$products   =$_POST["products"];
+	$count     =$_POST["count"];
+	$price     =0;
+    
 	if($count<0)
 		echo "You cannot Enter negitive numbers";
-	else if($product=="dress"){
+	else if($products=="dress"){
 		$price=$count*400;
 		echo "Price = " . $price . "</br>";
 		if($price<1000){
@@ -21,7 +20,7 @@ if(isset($_SESSION['email'])){
 			echo "Price after sale = " . $price. "</br>";
 		}
 	}
-	else if($product=="shoes"){
+	else if($products=="shoes"){
 		$price=$count*200;
 		echo "Price = " . $price . "</br>";
 		if($price<1000){
@@ -33,7 +32,7 @@ if(isset($_SESSION['email'])){
 			echo "Price after sale = " . $price . "</br>";
 		}
 	}
-	else if($product=="handbag"){
+	else if($products=="handbag"){
 		$price=$count*150;
 		echo "Price = " . $price . "</br>";
 		if($price<1000){
@@ -45,7 +44,7 @@ if(isset($_SESSION['email'])){
 			echo "Price after sale = " . $price . "</br>";
 		}
 	}
-	else if($product=="jacket"){
+	else if($products=="jacket"){
 		$price=$count*500;
 		echo "Price = " . $price . "</br>";
 		if($price<1000){
@@ -57,7 +56,7 @@ if(isset($_SESSION['email'])){
 			echo "Price after sale = " . $price . "</br>";
 		}
 	}
-	else if($product=="pants"){
+	else if($products=="pants"){
 		$price=$count*300;
 		echo "Price = " . $price . "</br>";
 		if($price<1000){
@@ -70,6 +69,7 @@ if(isset($_SESSION['email'])){
 		}
 	}
   echo "Go to <a href='logout.php'>Log Out</a>";
+     echo $products;
 	
 }  
     else 

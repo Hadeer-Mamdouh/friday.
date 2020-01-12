@@ -3,8 +3,8 @@
 	
 	<br/>
 	<label>Choes Your Product</label>
-	<select name="product">
-		<option value ="dress"> Dress</option>
+	<select name="products">
+		<option value ="dress"> Dress</option> 
 		<option value ="shoes"> Shoes</option>
 		<option value ="handbag"> Handbag</option>
 		<option value ="pants"> Pants</option>
@@ -17,5 +17,5 @@
 	<br/>
 	<br/>
 	
-	<input type="submit" value="Submit">
+	<input type="submit" value="Send">
 </form>
